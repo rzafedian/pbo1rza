@@ -7,8 +7,11 @@ public class IfElse {
 
         if(uangdidompet<totalbelanja) {
             System.out.println("DUIT KADA CUKUP");
-        }else{
-            System.out.println("DUIT CUKUP, TERIMAKASIH");
+        }else if(uangdidompet>totalbelanja){
+            double angsul = uangdidompet-totalbelanja;
+            System.out.println("DUIT CUKUP, ANGSUL : "+angsul);
+        } else {
+            System.out.println("DUIT PAS KADA BAANGSUL");
         }
     }
 }
